@@ -30,6 +30,7 @@ RUN chmod 777 /var/run
 RUN chmod 755 /usr/local/etc/opensips/opensips.cfg
 
 COPY run.sh /etc/run.sh
+COPY opensips.cfg /usr/local/etc/opensips/opensips.cfg
 RUN chown root.root /etc/run.sh
 RUN chmod 700 /etc/run.sh
 
